@@ -1,0 +1,25 @@
+litros = float(input("Informe a quantidade de litros vendidos: "))
+tipo = input("Informe o tipo de combustível (A-álcool, G-gasolina): ")
+
+preco_alcool = 3.79
+preco_gasolina = 6.59
+
+if tipo == "A":
+    if litros <= 25:
+        desconto = 0.10
+    else:
+        desconto = 0.20
+    preco_total = litros * preco_alcool * (1 - desconto)
+
+elif tipo == "G":
+    if litros <= 25:
+        desconto = 0.15
+    else:
+        desconto = 0.30
+    preco_total = litros * preco_gasolina * (1 - desconto)
+
+else:
+    preco_total = 0
+    print("Tipo de combustível inválido!")
+
+print(f"Valor a ser pago: R$ {preco_total}")
