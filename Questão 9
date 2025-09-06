@@ -1,0 +1,12 @@
+
+
+renda = float(input("Informe sua renda mensal: R$ "))
+emprestimo = float(input("Informe o valor do empréstimo: R$ "))
+prestacoes = int(input("Informe o número de prestações que voce deseja: "))
+
+valor_prestacao = emprestimo / prestacoes
+
+if emprestimo <= 10 * renda and valor_prestacao <= 0.3 * renda:
+    print("Empréstimo liberado!")
+else:
+    print("Empréstimo recusado.")
