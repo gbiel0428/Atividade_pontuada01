@@ -1,0 +1,14 @@
+import os
+os.system
+
+VALOR_A = int(input("Digite o valor A: "))
+VALOR_B = int(input("Digite o valor B: "))
+
+if VALOR_A == VALOR_B:
+    C = VALOR_A + VALOR_B
+    print(f"A soma foi: {C}")
+    print(f"A variável C foi: {C}")
+else: 
+    C = VALOR_A * VALOR_B
+    print(f"A multiplicação foi: {C}")
+    print(f"A variável C foi: {C}")
