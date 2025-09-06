@@ -1,0 +1,23 @@
+import os
+os.system("cls")
+
+Produto = input("Informe o nome do produto: ")
+Quantidade = float(input("Informe a quantidade do produto: "))
+preco_unitario = 5
+
+total = Quantidade * preco_unitario
+
+if Quantidade <= 5:
+    desconto = total * 0.02
+elif Quantidade <= 10:
+    desconto = total * 0.03
+else:
+    desconto = total * 0.05
+
+total_a_pagar = total - desconto
+
+print(f"O produto escolhido foi: {Produto}")
+print(f"Quantidade: {Quantidade}")
+print(f"Valor total: R$ {total}")
+print(f"Desconto: R$ {desconto}")
+print(f"Total a pagar: R$ {total_a_pagar}")
