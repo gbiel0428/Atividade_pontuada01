@@ -1,0 +1,19 @@
+import os
+os.system("cls")
+
+operacao = input("Digite a operação que você deseja (+, -, *, /): ")
+A = float(input("Digite o valor de A: "))
+B = float(input("Digite o valor de B: "))
+
+if operacao == "+":
+    resultado = A + B
+elif operacao == "-":
+    resultado = A - B
+elif operacao == "*":
+    resultado = A * B
+elif operacao == "/":
+    resultado = A / B
+else:
+    resultado = "Operação inválida!"
+
+print(f"O resultado de {A} {operacao} {B} é: {resultado}")
